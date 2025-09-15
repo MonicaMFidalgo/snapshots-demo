@@ -1,17 +1,10 @@
-import React from 'react';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Navigate,
-  Link,
-} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import ScreencapturePreview from './components/ScreencapturePreview';
 import { screenshots } from './data/dummyData.ts';
 
 function App() {
   return (
-    <Router>
+    <Router basename='/snapshots-demo'>
       <Routes>
         <Route
           path='/'
