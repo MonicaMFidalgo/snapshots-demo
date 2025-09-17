@@ -62,30 +62,31 @@ const Header: React.FC<HeaderProps> = ({
 
           <div>
             <div className='flex items-center justify-between'>
-              <button
-                onClick={handleCopyUrl}
-                className='inline-flex items-center px-3 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors'
-              >
+              <button onClick={handleCopyUrl} className='copy-button'>
                 {copied ? (
                   <>
-                    <Check className='w-4 h-4 mr-2 text-green-600' />
-                    Copied!
+                    <Check
+                      className='w-4 h-4 text-green-600'
+                      fill='white'
+                      stroke='none'
+                    />
+                    <span>Copied!</span>
                   </>
                 ) : (
                   <>
-                    <Copy className='w-4 h-4 mr-2' />
-                    Copy URL
+                    <Copy className='w-4 h-4' />
+                    <span>Copy URL</span>
                   </>
                 )}
               </button>
 
-              <button
+              {/* <button
                 onClick={handleShare}
                 className='inline-flex items-center px-3 py-2 bg-blue-600 text-white rounded-md text-sm font-medium hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors'
               >
                 <Share2 className='w-4 h-4 mr-2' />
                 Share
-              </button>
+              </button> */}
             </div>
             <ViewportToggle
               viewportMode={viewportMode}

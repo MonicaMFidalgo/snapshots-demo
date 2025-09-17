@@ -15,9 +15,9 @@ const ViewportToggle: React.FC<ViewportToggleProps> = ({
     <div className='flex items-center bg-white rounded-lg border border-gray-200 p-1 mt-1 shadow-sm'>
       <button
         onClick={() => onViewportChange('desktop')}
-        className={`flex items-center px-4 py-2 rounded-md text-sm font-medium transition-colors ${
+        className={`flex items-center px-4 py-2 rounded-md text-sm font-semibold transition-colors ${
           viewportMode === 'desktop'
-            ? 'bg-blue-600 text-white'
+            ? 'color-blue text-white'
             : 'text-gray-700 hover:text-gray-900 hover:bg-gray-50'
         }`}
       >
@@ -27,9 +27,9 @@ const ViewportToggle: React.FC<ViewportToggleProps> = ({
 
       <button
         onClick={() => onViewportChange('mobile')}
-        className={`flex items-center px-4 py-2 rounded-md text-sm font-medium transition-colors ${
+        className={`flex items-center px-4 py-2 rounded-md text-sm font-semiboldtransition-colors ${
           viewportMode === 'mobile'
-            ? 'bg-blue-600 text-white'
+            ? 'color-blue text-white'
             : 'text-gray-700 hover:text-gray-900 hover:bg-gray-50'
         }`}
       >

@@ -1,3 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'proxima-nova';
+  src: url('./assets/fonts/proximanova_regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'proxima-nova';
+  src: url('./assets/fonts/proximanova_bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'proxima-nova', Arial, sans-serif;
+}
+
+.copy-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 8px;
+  height: 42px;
+  padding: 0 24px;
+  border-radius: 35px;
+  background: #53baea;
+  color: white;
+  font-weight: 600;
+}
+
+.color-blue {
+  background-color: #53baea;
+}
